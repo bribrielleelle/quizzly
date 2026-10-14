@@ -1,0 +1,23 @@
+{
+  "name": "quizwhiz",
+  "version": "0.1.0",
+  "description": "QuizWhiz - a quiz web app for high school classmates",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "node src/migrate.js",
+    "seed": "node src/seed.js",
+    "setup": "npm run migrate && npm run seed"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-session": "^2.1.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  }
+}
